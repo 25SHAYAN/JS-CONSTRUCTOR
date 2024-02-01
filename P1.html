@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSTRUCTOR</title>
+</head>
+<body>
+    <center>
+        <!-- date supports constructor and paramter type of an object not literal type -->
+
+        <h1>Date Constructor (Date Object)</h1>
+    </center>
+    <hr>
+    <script>
+        let date = new Date();
+        document.write(`<p>Type of date is: ${typeof(date)}<br></p>`);
+        document.write(date);
+        document.write("<hr>");
+
+        //we can update our own date(year,month,date(date month starts from 0),hr,min,sec)
+        var date1 =  new Date(2023,0,31,14,20,15);
+        document.write(date1 +"<br>");
+        document.write("<hr>");
+
+        //we can set string type also
+        var date2 =  new Date("31 January 2023");
+        document.write(date2 +"<br>");
+        document.write("<hr>");
+    </script>
+</body>
+</html>
